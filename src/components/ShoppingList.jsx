@@ -19,6 +19,10 @@ function ShoppingList() {
       .then(items => setItems(items))
       .catch(error => console.log(error))
   }, []);
+  
+  function handleUpdateItem(updatedItem) {
+    console.log("In ShoppingCart:", updatedItem);
+  }
 
   function handleAddItem(newItem) {
     setItems([...items, newItem]);
